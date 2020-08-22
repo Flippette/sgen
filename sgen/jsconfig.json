@@ -1,0 +1,6 @@
+// JavaScript configuration
+{
+    "typeAcquisition": {
+        "include": ["chrome"]
+    }
+}

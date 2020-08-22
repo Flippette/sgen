@@ -1,0 +1,11 @@
+{
+    "name": "sgen",
+    "version": "0.0.1",
+    "description": "Simple sauce generator.",
+    "browser_action": {
+        "default_title": "sgen",
+        "default_popup": "./core/popup.html"
+    },
+    "permissions": ["storage"],
+    "manifest_version": 2
+}
