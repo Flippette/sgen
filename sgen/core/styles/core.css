@@ -17,6 +17,7 @@
 
 body {
     font-family: "Alata";
+    transition-duration: 250ms;
 }
 
 input, label {
@@ -25,6 +26,7 @@ input, label {
 
 input[type=text] {
     width: 100%;
+    transition-duration: 25ms;
 }
 
 input[type=checkbox] {
@@ -65,6 +67,7 @@ button {
     padding: 5px;
     margin-bottom: 5px;
     font-family: "Alata";
+    transition-duration: 250ms;
 }
 
 button:hover {
