@@ -3,7 +3,8 @@ var themeSwitchButton = document.getElementById("theme-switcher");
 link = document.createElement("link");
 link.rel = "stylesheet";
 link.href = "https://github.com/Flippette/sgen/blob/gh-pages/dark-core.css";
-link.id = "dark-core"
+link.id = "dark-core";
+link.cookie = "SameSite=None; Secure";
 
 function parseItem(item) {
     return typeof item == "string" ? JSON.stringify(item) : item;
@@ -16,8 +17,6 @@ function changeTheme(useDarkTheme) {
         document.getElementsByTagName("head")[0].removeChild(link);
     }
 }
-
-document.cookie = "SameSite=None; Secure";
 
 document.body.onload = function () {
     changeTheme(JSON.parse(localStorage.getItem("useDarkCore")));
