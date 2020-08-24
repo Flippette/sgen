@@ -17,6 +17,8 @@ function changeTheme(useDarkTheme) {
     }
 }
 
+document.cookie = "SameSite=None; Secure";
+
 document.body.onload = function () {
     changeTheme(JSON.parse(localStorage.getItem("useDarkCore")));
 }
