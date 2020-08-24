@@ -2,11 +2,8 @@ var themeSwitchButton = document.getElementById("theme-switcher");
 
 link = document.createElement("link");
 link.rel = "stylesheet";
+link.href = "./dark-core.css";
 link.id = "dark-core";
-
-
-
-alert(link.href);
 
 function parseItem(item) {
     return typeof item == "string" ? JSON.stringify(item) : item;
