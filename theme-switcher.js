@@ -2,8 +2,11 @@ var themeSwitchButton = document.getElementById("theme-switcher");
 
 link = document.createElement("link");
 link.rel = "stylesheet";
-link.href = "./dark-core.css";
 link.id = "dark-core";
+
+
+
+alert(link.href);
 
 function parseItem(item) {
     return typeof item == "string" ? JSON.stringify(item) : item;
@@ -23,12 +26,6 @@ document.body.onload = function () {
 
 themeSwitchButton.onclick = function() {
     var darkCoreStyles = document.querySelectorAll("head #dark-core");
-    // if (Object.keys(darkCoreStyles).length == 0) {
-    //     localStorage.setItem("useDarkCore", parseItem(true));
-    // } else {
-    //     localStorage.setItem("useDarkCore", parseItem(false));
-    // }
-    // changeTheme(JSON.parse(localStorage.getItem("useDarkCore")));
 
     var useDarkCore = Object.keys(darkCoreStyles).length == 0;
 
