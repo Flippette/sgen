@@ -2,9 +2,8 @@ var themeSwitchButton = document.getElementById("theme-switcher");
 
 link = document.createElement("link");
 link.rel = "stylesheet";
-link.href = "https://github.com/Flippette/sgen/blob/gh-pages/dark-core.css";
+link.href = "./dark-core.css";
 link.id = "dark-core";
-link.cookie = "SameSite=None; Secure";
 
 function parseItem(item) {
     return typeof item == "string" ? JSON.stringify(item) : item;
